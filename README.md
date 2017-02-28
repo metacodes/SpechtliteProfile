@@ -3,17 +3,19 @@
 
 This is a template for SpechtLite designed for Chinese users.
 
+The template is based on  https://github.com/HoonHwang/SpechtLiteConf.
+
 ## Explanation of each file
 
-- **Conf.yaml**: The main configuration file, where all adapters and rules reside. You may want to copy and rename this file if you want to have several different settings to switch between.
+- **profile.yaml**: The main configuration file, where all adapters and rules reside. You may want to copy and rename this file if you want to have several different settings to switch between.
 
 - **pollutedip**: The list of DNS polluted IP addresses according to [Wikipedia](https://zh.m.wikipedia.org/zh-cn/域名服务器缓存污染).
 
-- **directlist**: The list of hosts that you want to connect directly, in regular expressions.
+- **directlist**: The list of hosts that you want to connect directly, in regular expressions. You can use the script gfwlist2regex.py in the folder gfwlist2regex to generate the directlist and proxylist.
 
-- **directiprange**: The list of ip ranges that you want to connect to directly without any proxy according to https://github.com/17mon/china_ip_list .
+- **directiprange**: The list of ip ranges that you want to connect to directly without any proxy according to https://github.com/17mon/china_ip_list.
 
-- **proxylist**: The list of hosts that you want to connect to through proxy, in regular expressions.
+- **proxylist**: The list of hosts that you want to connect to through proxy, in regular expressions. According to https://github.com/gfwlist/gfwlist. You can use the script gfwlist2regex.py in the folder gfwlist2regex to generate the directlist and proxylist.
 
 - **proxyiprange**: The list of ip ranges that you want to connect to through proxy.
 
@@ -25,11 +27,11 @@ This is a template for SpechtLite designed for Chinese users.
 ## Set Up and Running
 1. Download all of the files to your temporary folder
 
-2. Click **`Open profile folder`** and copy all of the files to that (`.SpechtLite`) folder. 
+2. Click **`Open profile folder`** and copy all of the files to that (`.SpechtLite`) folder.
 
-3. Set up the correct adapter configuration according to your proxy settings. 
+3. Set up the correct adapter configuration according to your proxy settings.
 
 4. Click **`Reload profile`** to reload your configuration.
 
-5. Start proxy by click the name of the config file in the menu, and check **`Set as system proxy`**. 
+5. Start proxy by click the name of the config file in the menu, and check **`Set as system proxy`**.
 > Or you can set it yourself by setting system HTTP/HTTPS proxy to `127.0.0.1:port`, SOCKS5 proxy (this will proxy things such as Mail.app) to `127.0.0.1:port+1` in **System Preferences**.
