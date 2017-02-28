@@ -22,7 +22,7 @@ This is a template for SpechtLite designed for Chinese users.
 - **rejectiprange**: The list of ip ranges that you want to block.
 
 
-## Get Up and Running
+## Set Up and Running
 1. Download all of the files to your temporary folder
 
 2. Click **`Open profile folder`** and copy all of the files to that (`.SpechtLite`) folder. 
