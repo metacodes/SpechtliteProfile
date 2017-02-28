@@ -3,7 +3,7 @@
 
 This is a template for SpechtLite designed for Chinese users.
 
-The template is based on  https://github.com/HoonHwang/SpechtLiteConf.
+The template is based on the repository [SpechtLiteConf](https://github.com/HoonHwang/SpechtLiteConf).
 
 ## Explanation of each file
 
@@ -11,11 +11,11 @@ The template is based on  https://github.com/HoonHwang/SpechtLiteConf.
 
 - **pollutedip**: The list of DNS polluted IP addresses according to [Wikipedia](https://zh.m.wikipedia.org/zh-cn/域名服务器缓存污染).
 
-- **directlist**: The list of hosts that you want to connect directly, in regular expressions. You can use the script gfwlist2regex.py in the folder gfwlist2regex to generate the directlist and proxylist.
+- **directlist**: The list of hosts that you want to connect directly, in regular expressions. According to [gfwlist](https://github.com/gfwlist/gfwlist). You can use the script gfwlist2regex.py in the folder gfwlist2regex to generate the directlist and proxylist.
 
-- **directiprange**: The list of ip ranges that you want to connect to directly without any proxy according to https://github.com/17mon/china_ip_list.
+- **directiprange**: The list of ip ranges that you want to connect to directly without any proxy according to [china_ip_list](https://github.com/17mon/china_ip_list).
 
-- **proxylist**: The list of hosts that you want to connect to through proxy, in regular expressions. According to https://github.com/gfwlist/gfwlist. You can use the script gfwlist2regex.py in the folder gfwlist2regex to generate the directlist and proxylist.
+- **proxylist**: The list of hosts that you want to connect to through proxy, in regular expressions. According to [gfwlist](https://github.com/gfwlist/gfwlist). You can use the script gfwlist2regex.py in the folder gfwlist2regex to generate the directlist and proxylist.
 
 - **proxyiprange**: The list of ip ranges that you want to connect to through proxy.
 
